@@ -1,0 +1,67 @@
+/// Componente imgGallery
+.imgGallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2em;
+    background-color: color(azulMarino);
+    min-height: 50vh;
+    padding: 2em;
+
+    // Loop para establecer imágenes de fondo de un array
+    @for $i from 1 through 9 {
+        &-card:nth-child(#{$i}) {
+            @include bgImg(backgroundImg($i));
+        }
+    }
+
+    &-card{
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform .2s ease-in-out;
+        
+    
+        &:hover{
+            transform: scale(1.05);
+        }
+    
+        &:nth-child(3n+1) {
+            grid-row: span 2;
+        }
+    
+        &:nth-child(3n+2) {
+            grid-column: span 1;
+        }
+        &:nth-last-child(2) {
+            grid-column: span 2; 
+            grid-row: span 1; 
+        }
+        &:last-child {
+            grid-column: span 2; 
+            grid-row: span 1; 
+        }
+    
+        
+    }
+
+    &-card-title{
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+        @extend %subtitlesLetterSpacing;
+        background-color: rgba(0, 0, 0, 0.33);
+        color: color(blanco);
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .imgGallery{
+        grid-template-columns: 1fr;
+        &-card{
+            margin-bottom: 2em;
+            grid-row: auto;
+            grid-column: auto;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+/// Componente carousel
+.carousel-item{
+    height: 90vh !important;
+    img{
+        height: 100vh !important;
+        object-fit: cover;
+        filter: brightness(80%);
+    }
+    .carouselTitle{
+        font-size: 2rem;
+        @extend %subtitlesLetterSpacing;
+    }
+}

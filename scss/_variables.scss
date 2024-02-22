@@ -1,0 +1,46 @@
+/// Proyecto: Buking.com
+/// @author Álvaro García Campos
+
+/// Mapa de colores
+/// @group colores
+$colores:(
+    "negro": black,
+    "blanco": white,
+    "gris": #E0E0E0,
+    "rojo": #e91b0c,
+    "azulMarino": #001F3F,
+    "dorado": #9B824C,
+    "doradoOscuro": #92773d,
+    "verdeEsmeralda" : #00796B
+);
+
+/// Función que devuelve un color del vector $colores
+/// @group colores
+/// @param {string} $color - nombre del color del vector $colores
+/// @return {color} - color en hexadecimal
+@function color($color){
+    @return map-get($colores, $color)
+};
+
+/// Mapa de imágenes
+/// @group imagenes
+$imgsGallery: (
+    1: "https://www.villanovo.es/photos/5755/mykonos-villa-granada-200207627261bb6807129926.38647617.1920.jpg",
+    2: "https://www.villanovo.es/photos/2197/alpes-suisses-chalet-big-white-185433541064cbacbca8ee28.38825501.1920.jpg",
+    3: "https://cdn.villanovo.com/5547-eze-villa-pamara-swimming-pool-1536021776649c496a1614a9.59695283-1018445544649c496a161726.14754501/1",
+    4: "https://www.villanovo.es/photos/32/marrakech-villa-palmeraie-32-97893212764f1e41a3ab809.93654568.1920.jpg",
+    5: "https://cdn.villanovo.com/5548-cannes-villa-sareta-terrace-1670036142649c49705d14c6.38500982-875237803649c49705d16e0.05894363/1",
+    6: "https://cdn.villanovo.com/3732-maacutelaga-villa-carligto-view-of-the-house-317459924654d06af51e9a9.45609545-1904675372654d06af51ec73.16457113/1",
+    7: "https://cdn.villanovo.com/6149-benahavis-villa-yareni-view-of-the-house-1461448940654d1e2e914582.75319537-1569946664654d1e2e9148d9.33204417/1",
+    8: "https://cdn.villanovo.com/6294-casares-villa-hosta-swimming-pool-302415485654d0c1c328635.26074286-1458710608654d0c1c328992.98829399/1"
+   
+);
+
+/// Función que devuelve un color del vector $colores
+/// @group imagenes
+/// @param {string} $img - nombre de la imagen del vector $imagenes
+/// @return {Imagen} - imagen
+
+@function backgroundImg($img){
+    @return map-get($imgsGallery, $img)
+}

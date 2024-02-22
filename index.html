@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./img/Logo.png" type="image/x-icon">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/0c06a27afa.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JS -->
+    <script src="js/index.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="./img/Logo.png" alt="Logo" ></a>
+        </div>
+
+        <nav class="nav">
+            <a href="#villas">DESTINOS</a>
+            <a href="#testimonies">EXPERIENCIAS</a>
+            <a href="#footer">INFO</a>
+            <a href="#footer">CONTACTO</a>
+        </nav>
+
+         <!-- SEARCH INPUT -->
+            <form id="searchInput" action="./Villas.html ">
+                <input type="text" id="searchInput-text" placeholder="🔍︎ Destino | Nombre de la villa">
+
+                
+                <input type="text" name="" id="searchInput-date" placeholder="Llegada"  onfocus="(this.type='date')" onblur="(this.type='text')">
+                <input type="text" name="" id="searchInput-date" placeholder="Salida" onfocus="(this.type='date')" onblur="(this.type='text')">
+
+                <select class="form-select" id="searchInput-select" aria-label="Default select example">
+                    <option selected>Personas</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="mas">Más</option>
+
+                </select>
+                <button id="searchInput-btn" >BUSCAR</button>
+            </form>
+        
+        <!-- END SEARCH INPUT -->
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- CAROUSEL -->
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+                <li data-target="#myCarousel" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></li>
+                <li data-target="#myCarousel" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></li>
+            </ol>
+            <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="https://cdn.villanovo.com/landing-1-home-1391833084649bf98a254a53.89850548/w=1920,h=780" class="d-block w-100" alt="HOME IN ITALY">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="carouselTitle">DESCUBRA LAS VILLAS MÁS LUJOSAS POR TODO EL MUNDO</h3>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="https://cdn.villanovo.com/landing-1-home-1348982253649bf98ca0cc49.16807462/w=1920,h=780" class="d-block w-100" alt="ENJOY THE VERY BEST OF ITALY">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="carouselTitle">PASA TUS VACACIONES CON AMIGOS O FAMILIA EN CHALETS DE LUJO </h3>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="https://cdn.villanovo.com/landing-1-home-1477553633649bf9879e4fc3.96126983/w=1920,h=780" class="d-block w-100" alt="YOUR HOME IN ITALY AWAY FROM HOME">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="carouselTitle">VILLAS DE LUJO EN ALQUILER, CASAS ÚNICAS Y SERVICIO PERSONALIZADO </h3>
+                </div>
+            </div>
+            </div>
+            <a class="carousel-control-prev" data-bs-target="#carousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" data-bs-target="#carousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+        <!-- END CAROUSEL -->
+
+        <!-- ADVERTISING -->
+        <section class="advertising">
+            <h2 class="advertising-title">VILLAS DE LUJO EN TODO EL MUNDO</h2>
+            <div class="advertising-adds">
+                <div class="advertising-adds-add">
+                    <i class="fa-solid fa-globe"></i>
+                    <div class="advertising-adds-add-desc">
+                        <h3>DESTINOS EXCLUSIVOS</h3>
+                        <span>explora nuestras villas en los destinos más exclusivos del mundo</span>
+                    </div>
+                </div>
+                <div class="advertising-adds-add">
+                    <i class="fa-solid fa-glass-martini-alt"></i>
+                    <div class="advertising-adds-add-desc">
+                        <h3>EXPERIENCIAS INOLVIDABLES</h3>
+                        <span>vive momentos únicos con nuestras experiencias personalizadas</span>
+                    </div>
+                </div>
+                <div class="advertising-adds-add" id="villas">
+                    <i class="fa-solid fa-home"></i>
+                    <div class="advertising-adds-add-desc">
+                        <h3>VILLAS DE ENSUEÑO</h3>
+                        <span>descubre nuestras villas de lujo, diseñadas para tu confort y placer</span>
+                    </div>
+                </div>
+                <div class="advertising-adds-add">
+                    <i class="fa-solid fa-gift"></i>
+                    <div class="advertising-adds-add-desc">
+                        <h3>OFERTAS ESPECIALES</h3>
+                        <span>aprovecha nuestras ofertas exclusivas en alquiler de villas de lujo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END ADVERTISING -->
+
+        <!-- IMAGE GALLERY -->
+        <section class="imgGallery" id="villas">
+            <div class="imgGallery-card"> 
+                <h3 class="imgGallery-card-title">GRANADA</h3>
+            </div>
+            <div class="imgGallery-card"> 
+                <h3 class="imgGallery-card-title">MILÁN</h3>
+            </div>
+            <div class="imgGallery-card"> 
+                <h3 class="imgGallery-card-title">MARBELLA</h3>
+            </div>
+            <div class="imgGallery-card">
+                <h3 class="imgGallery-card-title">AMSTERDAM</h3>
+            </div>
+            
+            <div class="imgGallery-card">
+                <h3 class="imgGallery-card-title">MÓNACO</h3>
+            </div>
+            <div class="imgGallery-card">
+                <h3 class="imgGallery-card-title">DUBÁI</h3>
+            </div>
+            <div class="imgGallery-card">
+                <h3 class="imgGallery-card-title">PARÍS</h3>
+            </div>
+            <div class="imgGallery-card">
+                <h3 class="imgGallery-card-title">SINGAPUR</h3>
+            </div>
+            
+            
+        </section>
+        <!-- END IMAGE GALLERY -->        
+
+        <!-- TESTIMONIES -->
+        <section class="testimonies" id="testimonies">
+            <h2 class="testimonies-title">EXPERIENCIAS EN VILLA ELEGANCE</h2>
+            <div class="testimonies-testimonies">
+                <div class="testimonies-testimonie">
+                    <div class="testimonies-testimonie-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonies-testimonie-text">
+                        Mi familia y yo tuvimos la experiencia más increíble gracias a Villa Elegance. La atención y sugerencias de actividades, restaurantes y lugares para visitar fueron perfectas. El nivel de servicio superó nuestras expectativas; definitivamente volveremos a usar sus servicios para futuros viajes a Italia. Gracias, tuvimos el mejor tiempo de nuestras vidas.
+                    </div>
+                    <div class="testimonies-testimonie-details">
+                        Rachel B. (EE. UU.) - Castillo Nettuno - Abril 2022
+                    </div>
+                </div>
+                <div class="testimonies-testimonie">
+                    <div class="testimonies-testimonie-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonies-testimonie-text">
+                        Nuestra estancia fue un gran éxito. Disfrutamos cada momento. El servicio fue muy profesional y respondieron a todas nuestras solicitudes de manera rápida y completa. Después de llegar a la villa, estuvieron en contacto conmigo por teléfono solo para preguntar si todo estaba bien. ¡Eso es servicio!
+                    </div>
+                    <div class="testimonies-testimonie-details">
+                        Bjorn K. (Islandia) - Le Rose - Agosto 2022
+                    </div>
+                </div>
+                <div class="testimonies-testimonie">
+                    <div class="testimonies-testimonie-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonies-testimonie-text">
+                        "Un viaje inolvidable gracias a Villa Elegance. La villa superó nuestras expectativas, y el equipo se encargó de todos los detalles. Nos sentimos como en casa y estamos agradecidos por esta experiencia única."
+                    </div>
+                    <div class="testimonies-testimonie-details">
+                        — Diego M. (Argentina) - Villa Paradiso - Julio 2022
+                    </div>
+                </div>
+                <div class="testimonies-testimonie">
+                    <div class="testimonies-testimonie-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonies-testimonie-text">
+                        "¡Viajar con Villa Elegance es garantía de calidad y comodidad! Gracias por hacer de nuestras vacaciones en Italia una experiencia inolvidable. Ya estamos planificando nuestro próximo viaje con ustedes."
+                    </div>
+                    <div class="testimonies-testimonie-details">
+                        — Elena P. (México) - Villa Serenidad - Agosto 2022
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- END TESTIMONIES -->
+    </main>
+    <!-- END MAIN -->
+
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start text-muted footer" id="footer">
+
+        <!-- Section: Links  -->
+        <section class="footer ">
+            <div class="container text-center text-md-start ">
+                <div class="row mt-3">
+                    <div class="col-md-4 mx-auto mb-4">
+                        <!-- Contenido -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fa-solid fa-home me-3 text-light"></i>Villa Elegance
+                        </h6>
+                        <p>
+                            En Villa Elegance nos especializamos en ofrecer las más exclusivas residencias privadas para alquiler vacacional en España.
+                            Nuestra misión es proporcionar a nuestros clientes exigentes las mejores experiencias de lujo italiano.
+                            ¡Permítase disfrutar de lo mejor del lujo italiano con una experiencia única!
+                        </p>
+                    </div>
+        
+                    <div class="col-md-4 mx-auto mb-4">
+                        <!-- Enlaces -->
+                        <h6 class="text-uppercase fw-bold mb-4">Descubre más</h6>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Sobre Nosotros</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Condiciones y Formularios de Reserva</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Políticas y Privacidad</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Ofertas Especiales y Último Minuto</a>
+                        </p>
+                    </div>
+        
+                    <div class="col-md-4 mx-auto mb-md-0 mb-4">
+                        <!-- Información de Contacto -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <p><i class="fa-solid fa-map-marker-alt me-3 text-light"></i> España, Marbella</p>
+                        <p>
+                            <i class="fa-solid fa-envelope me-3 text-light"></i>
+                            info@villaelegance.com
+                        </p>
+                        <p><i class="fa-solid fa-phone me-3 text-light"></i> +34 123 456 789</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Links  -->
+    
+    </footer>
+    <!-- END FOOTER -->
+</body>
+</html>

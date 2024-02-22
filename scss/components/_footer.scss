@@ -1,0 +1,10 @@
+/// Componente footer
+#footer{
+    background-color: color("azulMarino");
+    color: color("blanco") !important;
+    padding-top: 2vh;
+    .text-reset:hover{
+        color: black !important;
+        transition: all .2s ease-in-out;
+    }
+}

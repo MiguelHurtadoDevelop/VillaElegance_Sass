@@ -1,0 +1,98 @@
+.details-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2em;
+    background-color: color("grisClaro");
+    padding: 2em;
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        &-main {
+            background-color: color("azulMarino");
+            color: color("blanco");
+            padding: 1.5em;
+            border-radius: 0.5em;
+
+            h2 {
+                font-size: 1.8em;
+                margin-bottom: 0.5em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+        }
+
+        &-description {
+            padding: 1em;
+            border: 1px solid color("azulMarino");
+            border-radius: 0.5em;
+        }
+
+        &-facilities {
+            
+            gap: 0.5em;
+
+            .list-group-item {
+                background-color: color("verdeEsmeralda");
+                color: color("blanco");
+                padding: 0.5em 1em;
+                border-radius: 0.3em;
+            }
+        }
+    }
+
+    &-options {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+        background-color: color("azulMarino");
+        color: color("blanco");
+        padding: 2em;
+        border-radius: 0.5em;
+        height: fit-content;
+
+        &-btn {
+            background-color: color("dorado");
+            color: color("blanco");
+            transition: background-color 0.2s ease-in-out;
+            padding: 1em;
+            width: inherit;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            border-radius: 0.3em;
+
+            &:hover {
+                background-color: color("doradoOscuro");
+            }
+        }
+
+        &-phone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8em;
+
+            &-number {
+                color: color("dorado");
+                font-size: 1.2em;
+                cursor: pointer;
+                transition: transform 0.2s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .fa-star {
+        color: color("dorado");
+        font-size: 1.5em;
+    }
+}

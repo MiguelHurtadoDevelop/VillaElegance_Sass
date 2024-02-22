@@ -1,0 +1,615 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.villasSection-villa-info-details button, #searchInput-text, #searchInput-date, #searchInput-select, #searchInput-btn {
+  border: none;
+  outline: none;
+}
+
+.imgGallery-card-title, .advertising-title, .carousel-item .carouselTitle {
+  letter-spacing: 0.25em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Quicksand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  height: 15vh;
+  width: 100%;
+  top: 0;
+  display: grid;
+  grid-template-columns: minmax(10rem, 1fr) repeat(7, minmax(min-content, 16rem)) minmax(10rem, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  z-index: 100;
+  position: fixed;
+  background-color: #001F3F;
+  opacity: 0.95;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 10vh;
+}
+
+.logo {
+  margin-top: 5%;
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.logo img {
+  max-width: 100%;
+}
+
+/* Consulta de medios para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .logo img {
+    max-width: 15rem;
+    margin-top: 15%;
+  }
+}
+/* Consulta de medios para pantallas aún más pequeñas */
+@media (max-width: 480px) {
+  .logo img {
+    max-width: 15rem; /* Reducir aún más el ancho máximo en pantallas muy pequeñas si es necesario */
+  }
+}
+.nav {
+  grid-column: 6/-1;
+  grid-row: 1/2;
+  justify-content: flex-end;
+}
+.nav a {
+  color: #E0E0E0;
+  border-right: 1px solid #E0E0E0;
+  padding-left: calc(1em - 1px);
+  padding-right: calc(1em - 1px);
+}
+.nav a:last-of-type {
+  border-right: none;
+}
+.nav a:hover {
+  color: #9B824C;
+}
+
+@media screen and (max-width: 460px) {
+  .nav {
+    grid-column: 3/-1;
+  }
+}
+#searchInput {
+  grid-column: 1/-1;
+  grid-row: 2/-1;
+  z-index: 101;
+  width: 100%;
+  display: flex;
+  background-color: #E0E0E0;
+}
+#searchInput-text, #searchInput-date, #searchInput-select, #searchInput-btn {
+  background-color: transparent;
+  color: black;
+}
+#searchInput-text {
+  flex-basis: 55%;
+  padding-left: 1em;
+}
+#searchInput-text::placeholder {
+  color: black;
+}
+#searchInput-date, #searchInput-select {
+  flex-basis: 10%;
+}
+#searchInput-select option {
+  color: black;
+}
+#searchInput-btn {
+  flex-basis: 15%;
+  background-color: #9B824C;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+#searchInput-btn:hover {
+  background-color: #92773d;
+}
+@media only screen and (max-width: 600px) {
+  #searchInput {
+    flex-direction: column;
+  }
+  #searchInput-text {
+    width: 100%;
+  }
+  #searchInput-text, #searchInput-date, #searchInput-select, #searchInput-btn {
+    flex-basis: auto;
+  }
+}
+
+.carousel-item {
+  height: 90vh !important;
+}
+.carousel-item img {
+  height: 100vh !important;
+  object-fit: cover;
+  filter: brightness(80%);
+}
+.carousel-item .carouselTitle {
+  font-size: 2rem;
+}
+
+.carrouselDetalles {
+  height: 70vh !important;
+}
+.carrouselDetalles-crrs {
+  height: 70vh !important;
+}
+.carrouselDetalles-crrs img {
+  height: 70vh !important;
+}
+
+.advertising {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  background-color: white;
+}
+.advertising-title {
+  text-align: center;
+  margin: 2em;
+  font-size: 2em;
+}
+.advertising-adds {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+}
+.advertising-adds-add {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 1em;
+  background-color: #00796B;
+  border-radius: 10px;
+}
+.advertising-adds-add .fa-solid {
+  font-size: 2em;
+  color: #9B824C;
+}
+.advertising-adds-add-desc {
+  flex: 1;
+  text-align: left;
+}
+.advertising-adds-add-desc h3 {
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+}
+.advertising-adds-add-desc span {
+  font-size: 0.9em;
+  color: #E0E0E0;
+}
+
+@media screen and (max-width: 460px) {
+  .advertising-adds {
+    grid-template-columns: 1fr;
+  }
+  .advertising-adds-add {
+    width: 100%;
+  }
+}
+.imgGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2em;
+  background-color: #001F3F;
+  min-height: 50vh;
+  padding: 2em;
+}
+.imgGallery-card:nth-child(1) {
+  background-image: url("https://www.villanovo.es/photos/5755/mykonos-villa-granada-200207627261bb6807129926.38647617.1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgGallery-card:nth-child(2) {
+  background-image: url("https://www.villanovo.es/photos/2197/alpes-suisses-chalet-big-white-185433541064cbacbca8ee28.38825501.1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgGallery-card:nth-child(3) {
+  background-image: url("https://cdn.villanovo.com/5547-eze-villa-pamara-swimming-pool-1536021776649c496a1614a9.59695283-1018445544649c496a161726.14754501/1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgGallery-card:nth-child(4) {
+  background-image: url("https://www.villanovo.es/photos/32/marrakech-villa-palmeraie-32-97893212764f1e41a3ab809.93654568.1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgGallery-card:nth-child(5) {
+  background-image: url("https://cdn.villanovo.com/5548-cannes-villa-sareta-terrace-1670036142649c49705d14c6.38500982-875237803649c49705d16e0.05894363/1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgGallery-card:nth-child(6) {
+  background-image: url("https://cdn.villanovo.com/3732-maacutelaga-villa-carligto-view-of-the-house-317459924654d06af51e9a9.45609545-1904675372654d06af51ec73.16457113/1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgGallery-card:nth-child(7) {
+  background-image: url("https://cdn.villanovo.com/6149-benahavis-villa-yareni-view-of-the-house-1461448940654d1e2e914582.75319537-1569946664654d1e2e9148d9.33204417/1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgGallery-card:nth-child(8) {
+  background-image: url("https://cdn.villanovo.com/6294-casares-villa-hosta-swimming-pool-302415485654d0c1c328635.26074286-1458710608654d0c1c328992.98829399/1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgGallery-card:nth-child(9) {
+  background-image: url();
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imgGallery-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+.imgGallery-card:hover {
+  transform: scale(1.05);
+}
+.imgGallery-card:nth-child(3n+1) {
+  grid-row: span 2;
+}
+.imgGallery-card:nth-child(3n+2) {
+  grid-column: span 1;
+}
+.imgGallery-card:nth-last-child(2) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.imgGallery-card:last-child {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.imgGallery-card-title {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.33);
+  color: white;
+  padding: 1em;
+}
+
+@media screen and (max-width: 460px) {
+  .imgGallery {
+    grid-template-columns: 1fr;
+  }
+  .imgGallery-card {
+    margin-bottom: 2em;
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
+.testimonies {
+  padding: 3em;
+  background-color: white;
+  text-align: center;
+}
+.testimonies .testimonies-title {
+  font-size: 2em;
+  color: #001F3F;
+}
+.testimonies .testimonies-testimonies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2em;
+}
+.testimonies .testimonies-testimonies .testimonies-testimonie {
+  width: 30vw;
+  padding: 2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2em;
+}
+.testimonies .testimonies-testimonies .testimonies-testimonie .testimonies-testimonie-rating {
+  color: #9B824C;
+  font-size: 1.5em;
+}
+.testimonies .testimonies-testimonies .testimonies-testimonie .testimonies-testimonie-text {
+  font-style: italic;
+  font-size: 1.2em;
+}
+.testimonies .testimonies-testimonies .testimonies-testimonie .testimonies-testimonie-details {
+  font-size: 0.9em;
+}
+@media screen and (max-width: 765px) {
+  .testimonies .testimonies-testimonie-details {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 460px) {
+  .testimonies .testimonies-testimonie {
+    width: 100% !important;
+  }
+  .testimonies .testimonies-testimonie .testimonies-testimonie-details {
+    font-size: 1em;
+  }
+}
+
+.villasSection {
+  background-color: white;
+  height: fit-content;
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.villasSection h1 {
+  font-size: 3em;
+  margin-top: 1em;
+}
+
+.villasSection-villa {
+  width: fit-content;
+  height: 45vh;
+  background-color: #001F3F;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.villasSection-villa-imgs {
+  position: relative;
+  height: 45vh !important;
+  flex-basis: 45%;
+}
+.villasSection-villa-imgs img {
+  height: 45vh !important;
+  object-fit: cover;
+  filter: brightness(100%);
+}
+.villasSection-villa-imgs .fa-heart {
+  position: absolute;
+  background-color: #00796B;
+  color: #9B824C;
+  border-radius: 100%;
+  padding: 0.7em;
+  font-size: 1.2em;
+  top: 1em;
+  right: 1em;
+  z-index: 2;
+}
+.villasSection-villa-imgs .fa-heart:hover {
+  color: #00796B;
+  background-color: #9B824C;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.villasSection-villa-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-basis: 55%;
+  padding: 2em;
+}
+.villasSection-villa-info-content-title {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+.villasSection-villa-info-content-location {
+  font-size: 12px;
+  margin-bottom: 0.4em;
+}
+.villasSection-villa-info-content-description {
+  font-size: 14px;
+}
+.villasSection-villa-info-content-facilities {
+  width: 100%;
+  font-size: 1.2em;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+}
+.villasSection-villa-info-content-facilities span i {
+  color: #00796B;
+  font-size: 1.4em;
+}
+.villasSection-villa-info-details {
+  width: 100%;
+  border-top: 1px solid #E0E0E0;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.villasSection-villa-info-details button {
+  background-color: #9B824C;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  padding: 1em;
+}
+.villasSection-villa-info-details button:hover {
+  background-color: #00796B;
+}
+.villasSection-villa .fa-star {
+  color: #9B824C;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 460px) {
+  .villasSection-villa {
+    height: fit-content;
+  }
+  .villasSection-villa-imgs {
+    position: relative;
+    height: 35vh !important;
+    flex-basis: 50%;
+  }
+  .villasSection-villa-imgs img {
+    height: 35vh !important;
+    object-fit: cover;
+    filter: brightness(100%);
+  }
+  .villasSection-villa-info {
+    line-height: 1.2em;
+    flex-basis: 50%;
+  }
+  .villasSection-villa-info-content-location {
+    font-size: 1em;
+  }
+  .villasSection-villa-info-content-description {
+    font-size: 1em;
+  }
+  .villasSection-villa-info-content-facilities {
+    font-size: 0.9em;
+  }
+  .fa-star {
+    font-size: 5px !important;
+  }
+}
+.details-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
+  padding: 2em;
+}
+.details-container-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.details-container-info-main {
+  background-color: #001F3F;
+  color: white;
+  padding: 1.5em;
+  border-radius: 0.5em;
+}
+.details-container-info-main h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+.details-container-info-main p {
+  font-size: 1.2em;
+}
+.details-container-info-description {
+  padding: 1em;
+  border: 1px solid #001F3F;
+  border-radius: 0.5em;
+}
+.details-container-info-facilities {
+  gap: 0.5em;
+}
+.details-container-info-facilities .list-group-item {
+  background-color: #00796B;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+}
+.details-container-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  background-color: #001F3F;
+  color: white;
+  padding: 2em;
+  border-radius: 0.5em;
+  height: fit-content;
+}
+.details-container-options-btn {
+  background-color: #9B824C;
+  color: white;
+  transition: background-color 0.2s ease-in-out;
+  padding: 1em;
+  width: inherit;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.3em;
+}
+.details-container-options-btn:hover {
+  background-color: #92773d;
+}
+.details-container-options-phone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+}
+.details-container-options-phone-number {
+  color: #9B824C;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.details-container-options-phone-number:hover {
+  transform: scale(1.1);
+}
+.details-container .fa-star {
+  color: #9B824C;
+  font-size: 1.5em;
+}
+
+#footer {
+  background-color: #001F3F;
+  color: white !important;
+  padding-top: 2vh;
+}
+#footer .text-reset:hover {
+  color: black !important;
+  transition: all 0.2s ease-in-out;
+}
+
+/*# sourceMappingURL=styles.css.map */

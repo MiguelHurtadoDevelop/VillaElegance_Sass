@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villas Andalucía</title>
+
+     <!-- FAVICON -->
+     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
+     <!-- FONT AWESOME -->
+     <script src="https://kit.fontawesome.com/0c06a27afa.js" crossorigin="anonymous"></script>
+ 
+     <!-- Bootstrap core CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styles.css">
+
+     <!-- JS -->
+    <script src="js/index.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="./img/logo.png" alt="Logo" class="img-fluid"></a>
+        </div>
+
+        <nav class="nav">
+            <a href="#villas">DESTINOS</a>
+            <a href="#testimonies">EXPERIENCIAS</a>
+            <a href="#footer">INFO</a>
+            <a href="#footer">CONTACTO</a>
+        </nav>
+
+         <!-- SEARCH INPUT -->
+         <form id="searchInput" action="./Villas.html ">
+            <input type="text" id="searchInput-text" placeholder="🔍︎ Destino | Nombre de la villa">
+
+            <input type="text" name="" id="searchInput-date" placeholder="Llegada"  onfocus="(this.type='date')" onblur="(this.type='text')">
+            <input type="text" name="" id="searchInput-date" placeholder="Salida" onfocus="(this.type='date')" onblur="(this.type='text')">
+
+            <select class="form-select" id="searchInput-select" aria-label="Default select example">
+                <option selected>Personas</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="mas">Más</option>
+
+            </select>
+            <button id="searchInput-btn" >BUSCAR</button>
+        </form>
+        <!-- END SEARCH INPUT -->
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
+    <main class="main">
+        
+
+        <!-- VILLAS LIST -->
+        <section class="villasSection">
+
+            <h1 class="villaSection-title">Villas en Andalucía</h1>
+            <div class="villasSection-villa">
+                <div id="carousel" class="carousel slide villasSection-villa-imgs">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://cdn.villanovo.com/6294-casares-villa-hosta-swimming-pool-302415485654d0c1c328635.26074286-1458710608654d0c1c328992.98829399/1" class="d-block w-100" alt="ville carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.villanovo.com/6294-casares-villa-hosta-living-room-1569765957654d0c1f343c19.92003514-138472701654d0c1f343fc1.01830906/1" class="d-block w-100" alt="carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://cdn.villanovo.com/6294-casares-villa-hosta-scenery-near-the-house-1358449131654d0c27d2afb3.61304533-1842522820654d0c27d2b3f3.69746251/1" class="d-block w-100" alt="carousel image">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" data-bs-target="#carousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" data-bs-target="#carousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="villasSection-villa-info">
+                    <div class="villasSection-villa-info-content">
+                        <div class="villasSection-villa-info-content-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="villasSection-villa-info-content-title">
+                            <h5> VILLA GRANADA</h5>
+                        </div>
+                        <div class="villasSection-villa-info-content-location">
+                            <span><i class="fa-solid fa-location-dot"></i> GRANADA, ESPAÑA</span>
+                        </div>
+                        <div class="villasSection-villa-info-content-price">
+                            <h6>8000 € / semana</h6>
+                        </div>
+                        <div class="villasSection-villa-info-content-description">
+                            <span>Ubicada en la emblemática ciudad de Granada, esta lujosa villa privada en España es una de las mejores propiedades disponibles para alquiler semanal cuando se trata de unas vacaciones glamorosas. Granada es una verdadera joya arquitectónica moderna...</span>
+                        </div>
+                        <div class="villasSection-villa-info-content-facilities">
+                            <span><i class="fa-solid fa-swimming-pool"></i> Piscina</span>
+                            <span><i class="fa-solid fa-wifi"></i> Wifi</span>
+                            <span><i class="fa-solid fa-parking"></i> Parking</span>
+                        </div>
+                    </div>
+                    <div class="villasSection-villa-info-details">
+                        <a href="detalles.html"><button>DETALLES</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="villasSection-villa">
+                <div id="carousel2" class="carousel slide villasSection-villa-imgs">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/878/adelchi-luxury-villas-porto-cervo-_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/878/adelchi-luxury-villas-porto-cervo-9_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/878/adelchi-luxury-villas-porto-cervo-9_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" data-bs-target="#carousel2" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" data-bs-target="#carousel2" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="villasSection-villa-info">
+                    <div class="villasSection-villa-info-content">
+                        <div class="villasSection-villa-info-content-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="villasSection-villa-info-content-title">
+                            <h5>MARBELLA SUNSET</h5>
+                        </div>
+                        <div class="villasSection-villa-info-content-location">
+                            <span><i class="fa-solid fa-location-dot"></i> MARBELLA, ESPAÑA</span>
+                        </div>
+                        <div class="villasSection-villa-info-content-price">
+                            <h6>8900 € / semana</h6>
+                        </div>
+                        <div class="villasSection-villa-info-content-description">
+                            <span>Ubicada en la exclusiva ubicación de Marbella, esta villa de lujo con 6 habitaciones en España está disponible para alquiler semanal. A solo diez minutos en coche de las icónicas playas de Marbella...</span>
+                        </div>
+                        <div class="villasSection-villa-info-content-facilities">
+                            <span><i class="fa-solid fa-swimming-pool"></i> Piscina</span>
+                            <span><i class="fa-solid fa-wifi"></i> Wifi</span>
+                            <span><i class="fa-solid fa-parking"></i> Parking</span>
+                        </div>
+                    </div>
+                    <div class="villasSection-villa-info-details">
+                        <a href="detalles.html"><button>DETALLES</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="villasSection-villa">
+                <div id="carousel3" class="carousel slide villasSection-villa-imgs">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/556/alla-fattoria-large-family-wedding-villa-spa-todi-umbria-rental-heated-pool-umbria-16_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/556/alla-fattoria-large-family-wedding-villa-spa-todi-umbria-rental-heated-pool-umbria-45_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/556/alla-fattoria-large-family-wedding-villa-spa-todi-umbria-rental-heated-pool-umbria-47_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" data-bs-target="#carousel3" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" data-bs-target="#carousel3" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="villasSection-villa-info">
+                    <div class="villasSection-villa-info-content">
+                        <div class="villasSection-villa-info-content-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="villasSection-villa-info-content-title">
+                            <h5>VILLA COSTA DE LUZ</h5>
+                        </div>
+                        <div class="villasSection-villa-info-content-location">
+                            <span><i class="fa-solid fa-location-dot"></i> HUELVA, ESPAÑA</span>
+                        </div>
+                        <div class="villasSection-villa-info-content-price">
+                            <h6>8750 - 21000 € / semana</h6>
+                        </div>
+                        <div class="villasSection-villa-info-content-description">
+                            <span>Al final de una avenida de cipreses protegida por los bosques, se abre el 'telón' de las colinas de Huelva, una imagen de postal que rodea Villa Costa de Luz, incluyendo sus casas de huéspedes...</span>
+                        </div>
+                        <div class="villasSection-villa-info-content-facilities">
+                            <span><i class="fa-solid fa-swimming-pool"></i> Piscina</span>
+                            <span><i class="fa-solid fa-wifi"></i> Wifi</span>
+                            <span><i class="fa-solid fa-umbrella-beach"></i> Playa</span>
+
+                        </div>
+                    </div>
+                    <div class="villasSection-villa-info-details">
+                        <a href="detalles.html"><button>DETALLES</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="villasSection-villa">
+                <div id="carousel4" class="carousel slide villasSection-villa-imgs">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/673/aquila-reale-luxury-villa-rental-como-lake-39_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/673/aquila-reale-luxury-villa-rental-como-lake-1_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.homeinitaly.com/_cache/img_mgr/_data/catalog/villas/673/aquila-reale-luxury-villa-rental-como-lake-5_768x480_im_r7_h0_v0_t1_c000-000-000-255_q50.avif" class="d-block w-100" alt="carousel image">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" data-bs-target="#carousel4" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" data-bs-target="#carousel4" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="villasSection-villa-info">
+                    <div class="villasSection-villa-info-content">
+                        <div class="villasSection-villa-info-content-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="villasSection-villa-info-content-title">
+                            <h5>VILLA ANDALUCÍA VISTA</h5>
+                        </div>
+                        <div class="villasSection-villa-info-content-location">
+                            <span><i class="fa-solid fa-location-dot"></i> ANDALUCÍA, ESPAÑA</span>
+                        </div>
+                        <div class="villasSection-villa-info-content-price">
+                            <h6>45000 - 84400 € / semana</h6>
+                        </div>
+                        <div class="villasSection-villa-info-content-description">
+                            <span>Con una vista dominante sobre algún hermoso lugar de Andalucía, Villa Andalucía Vista es una moderna villa familiar de cinco estrellas para alquilar, diseñada arquitectónicamente con interiores que siguen una fórmula que combina comodidad práctica...</span>
+                        </div>
+                        <div class="villasSection-villa-info-content-facilities">
+                            <span><i class="fa-solid fa-swimming-pool"></i> Piscina</span>
+                            <span><i class="fa-solid fa-wifi"></i> Wifi</span>
+                            <span><i class="fa-solid fa-mountain"></i> Montaña</span>
+
+                        </div>
+                    </div>
+                    
+                    <div class="villasSection-villa-info-details">
+                        <a href="detalles.html"><button>DETALLES</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END VILLAS LIST -->
+    </main>
+    <!-- END MAIN -->
+    
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start text-muted footer" id="footer">
+
+        <!-- Section: Links  -->
+        <section class="footer ">
+            <div class="container text-center text-md-start ">
+                <div class="row mt-3">
+                    <div class="col-md-4 mx-auto mb-4">
+                        <!-- Contenido -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fa-solid fa-home me-3 text-light"></i>Villa Elegance
+                        </h6>
+                        <p>
+                            En Villa Elegance nos especializamos en ofrecer las más exclusivas residencias privadas para alquiler vacacional en España.
+                            Nuestra misión es proporcionar a nuestros clientes exigentes las mejores experiencias de lujo italiano.
+                            ¡Permítase disfrutar de lo mejor del lujo italiano con una experiencia única!
+                        </p>
+                    </div>
+        
+                    <div class="col-md-4 mx-auto mb-4">
+                        <!-- Enlaces -->
+                        <h6 class="text-uppercase fw-bold mb-4">Descubre más</h6>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Sobre Nosotros</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Condiciones y Formularios de Reserva</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Políticas y Privacidad</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Ofertas Especiales y Último Minuto</a>
+                        </p>
+                    </div>
+        
+                    <div class="col-md-4 mx-auto mb-md-0 mb-4">
+                        <!-- Información de Contacto -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <p><i class="fa-solid fa-map-marker-alt me-3 text-light"></i> España, Granada</p>
+                        <p>
+                            <i class="fa-solid fa-envelope me-3 text-light"></i>
+                            info@villaelegance.com
+                        </p>
+                        <p><i class="fa-solid fa-phone me-3 text-light"></i> +34 123 456 789</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Links  -->
+    
+    </footer>
+    <!-- END FOOTER -->
+</body>
+</html>

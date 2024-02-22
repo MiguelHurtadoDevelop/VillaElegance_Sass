@@ -1,0 +1,19 @@
+@import "./variables";
+@import "./mixin";
+@import "./base";
+
+@import "./layout/header";
+@import "./layout/main";
+
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/searchInput";
+@import "./components/carousel";
+@import "./components/carrouselDetalles";
+@import "./components/advertising";
+@import "./components/imgGallery";
+@import "./components/testimonies";
+@import "./components/villasSection";
+@import "./components/villasSection-villa";
+@import "./components/detailsContainer";
+@import "./components/footer";

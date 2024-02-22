@@ -1,0 +1,59 @@
+#searchInput {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    z-index: 101;
+    width: 100%;
+    display: flex;
+    background-color: color("gris");
+
+    &-text, &-date, &-select, &-btn {
+        @extend %inputsNoneBorder;
+        background-color: transparent;
+        color: color("negro");
+    }
+
+    &-text {
+        flex-basis: 55%;
+        padding-left: 1em;
+
+        &::placeholder {
+            color: color("negro");
+        }
+    }
+
+    &-date, &-select {
+        flex-basis: 10%;
+    }
+
+    &-select option {
+        color: color("negro");
+    }
+
+    &-btn {
+        flex-basis: 15%;
+        background-color: color("dorado");
+        color: color("blanco");
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            background-color: color("doradoOscuro");
+        }
+    }
+
+    // Media Query para dispositivos con ancho máximo de 600px
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+
+        &-text {
+            width: 100%;
+        }
+
+        &-text, &-date, &-select, &-btn {
+            flex-basis: auto;
+        }
+    }
+
+    // Puedes agregar más Media Queries según tus necesidades
+}
+
+

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+
+     <!-- FAVICON -->
+     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+
+     <!-- FONT AWESOME -->
+     <script src="https://kit.fontawesome.com/0c06a27afa.js" crossorigin="anonymous"></script>
+ 
+     <!-- Bootstrap core CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+ 
+     <!-- CSS -->
+     <link rel="stylesheet" href="css/styles.css">
+
+     <!-- JS -->
+    <script src="js/index.js"></script>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="./img/logo.png" alt="Logo" class="img-fluid"></a>
+        </div>
+
+        <nav class="nav">
+            <a href="#villas">DESTINOS</a>
+            <a href="#testimonies">EXPERIENCIAS</a>
+            <a href="#footer">INFO</a>
+            <a href="#footer">CONTACTO</a>
+        </nav>
+
+         <!-- SEARCH INPUT -->
+         <form id="searchInput" action="./Villas.html ">
+            <input type="text" id="searchInput-text" placeholder="🔍︎ Destino | Nombre de la villa">
+
+            <input type="text" name="" id="searchInput-date" placeholder="Llegada"  onfocus="(this.type='date')" onblur="(this.type='text')">
+            <input type="text" name="" id="searchInput-date" placeholder="Salida" onfocus="(this.type='date')" onblur="(this.type='text')">
+
+            <select class="form-select" id="searchInput-select" aria-label="Default select example">
+                <option selected>Personas</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="mas">Más</option>
+
+            </select>
+            <button id="searchInput-btn" >BUSCAR</button>
+        </form>
+        <!-- END SEARCH INPUT -->
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
+    <main class="main">
+        <!-- CAROUSEL -->
+        <div class="carrouselDetalles">
+            <div id="carousel" class="carousel slide carrouselDetalles-crrs" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="https://cdn.villanovo.com/6294-casares-villa-hosta-swimming-pool-302415485654d0c1c328635.26074286-1458710608654d0c1c328992.98829399/1" class="d-block w-100" alt="ville carousel image">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://cdn.villanovo.com/6294-casares-villa-hosta-living-room-1569765957654d0c1f343c19.92003514-138472701654d0c1f343fc1.01830906/1" class="d-block w-100" alt="ville carousel image">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://cdn.villanovo.com/6294-casares-villa-hosta-2143584492654d0c21e23663.58965632-193451217654d0c21e23911.99783531/1" class="d-block w-100" alt="ville carousel image">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://www.villanovo.es/photos/6294/andalousie-villa-h-28263909762e7a235081338.91866165.1920.jpg" class="d-block w-100" alt="ville carousel image">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://cdn.villanovo.com/6294-casares-villa-hosta-scenery-near-the-house-1358449131654d0c27d2afb3.61304533-1842522820654d0c27d2b3f3.69746251/1" class="d-block w-100" alt="ville carousel image">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://www.villanovo.es/photos/6294/andalousie-villa-h-182843847462e7a2375830b4.21474012.1920.jpg" class="d-block w-100" alt="ville carousel image">
+                </div>
+                </div>
+                <a class="carousel-control-prev" data-bs-target="#carousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" data-bs-target="#carousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- END CAROUSEL -->
+
+        <!-- DETAILS CONTAINER -->
+        <div class="details-container">
+            <div class="details-container-info">
+                <section class="details-container-info-main w-100">
+                    <section class="details-container-info-main-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </section>
+                    <section class="details-container-info-main-title">
+                        <h1>VILLA GRANADA</h1>
+                    </section>
+                    <section class="details-container-info-main-location">
+                        <span><i class="fa-solid fa-location-dot"></i> GRANADA, ESPAÑA</span>
+                    </section>
+                    <section class="details-container-info-main-price">
+                        <span>8000 € / semana</span>
+                    </section>
+                </section>
+                <section class="details-container-info-description">
+                    <h2 class="text-center m-3">DESCRIPCIÓN</h2>
+                    <span>Ubicada en la emblemática localidad de Granada, esta lujosa villa privada en España es una de las propiedades más exclusivas disponibles para alquiler semanal cuando se trata de unas vacaciones italianas glamorosas. Villa Granada es una verdadera joya arquitectónica moderna, con características de diseño particulares como la armoniosa fusión entre el uso de piedra y la vegetación mediterránea en el ambiente.
+                        Esta elegante propiedad de dos pisos incluye seis pulidas habitaciones con baño privado. </span>
+                </section>
+                <section class="details-container-info-facilities w-100">
+                    <h2 class="text-center m-3">INSTALACIONES</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-bottom border-dark">Aire acondicionado A/C</li>
+                        <li class="list-group-item border-bottom border-dark">Televisión por satélite</li>
+                        <li class="list-group-item border-bottom border-dark">Conexión a internet Wi-Fi</li>
+                        <li class="list-group-item border-bottom border-dark">Home theatre</li>
+                        <li class="list-group-item border-bottom border-dark">Gimnasio</li>
+                        <li class="list-group-item border-bottom border-dark">Jacuzzi interior</li>
+                        <li class="list-group-item border-bottom border-dark">Piscina privada</li>
+                        <li class="list-group-item">Área de estacionamiento</li>
+                    </ul>
+                </section>
+                <section class="details-container-info-amenities w-100">
+                    <h2 class="text-center m-3">SERVICIOS CERCANOS</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-bottom border-dark">Pueblo más cercano, Granada, aproximadamente a 8 minutos a pie, 700 m</li>
+                        <li class="list-group-item border-bottom border-dark">Los 2 supermercados más cercanos, a 700 y 800 m</li>
+                        <li class="list-group-item border-bottom border-dark">Restaurantes y tiendas en el centro de Granada, a 1,7 km</li>
+                        <li class="list-group-item border-bottom border-dark">Playa más cercana, Playa de Granada, a pie 1,1 km (aproximadamente 15 minutos a pie)</li>
+                        <li class="list-group-item border-bottom border-dark">Playa de Piccolo Pevero, 3,2 km</li>
+                        <li class="list-group-item border-bottom border-dark">Playa de Grande Pevero, 3,6 km</li>
+                        <li class="list-group-item">Club de Golf Pevero, 7,1 km / 4,4 millas</li>
+                    </ul>
+                </section>
+                
+            </div>
+            <div class="details-container-options">
+                <button class="details-container-options-btn">VER DISPONIBILIDAD</button>
+                <div class="details-container-options-phone">
+                    <span>habla con un especialista</span>
+                    <span class="details-container-options-phone-number">+34 651 432 324</span>
+                    <span>o</span>
+                </div>
+                <button class="details-container-options-btn">PREGUNTA LO QUE NECESITES</button>
+            </div>
+        </div>
+        <!-- END DETAILS CONTAINER -->
+    </main>
+    <!-- END MAIN -->
+    
+    <!-- FOOTER -->
+    <footer class="text-center text-lg-start text-muted footer" id="footer">
+
+        <!-- Section: Links  -->
+        <section class="footer ">
+            <div class="container text-center text-md-start ">
+                <div class="row mt-3">
+                    <div class="col-md-4 mx-auto mb-4">
+                        <!-- Contenido -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fa-solid fa-home me-3 text-light"></i>Villa Elegance
+                        </h6>
+                        <p>
+                            En Villa Elegance nos especializamos en ofrecer las más exclusivas residencias privadas para alquiler vacacional en España.
+                            Nuestra misión es proporcionar a nuestros clientes exigentes las mejores experiencias de lujo italiano.
+                            ¡Permítase disfrutar de lo mejor del lujo italiano con una experiencia única!
+                        </p>
+                    </div>
+        
+                    <div class="col-md-4 mx-auto mb-4">
+                        <!-- Enlaces -->
+                        <h6 class="text-uppercase fw-bold mb-4">Descubre más</h6>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Sobre Nosotros</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Condiciones y Formularios de Reserva</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Políticas y Privacidad</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Ofertas Especiales y Último Minuto</a>
+                        </p>
+                    </div>
+        
+                    <div class="col-md-4 mx-auto mb-md-0 mb-4">
+                        <!-- Información de Contacto -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <p><i class="fa-solid fa-map-marker-alt me-3 text-light"></i> España, Marbella</p>
+                        <p>
+                            <i class="fa-solid fa-envelope me-3 text-light"></i>
+                            info@villaelegance.com
+                        </p>
+                        <p><i class="fa-solid fa-phone me-3 text-light"></i> +34 123 456 789</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Links  -->
+    
+    </footer>
+    <!-- END FOOTER -->
+</body>
+</html>
